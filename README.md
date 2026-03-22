@@ -1,6 +1,6 @@
 # 🏏 Pitch IQ — Cricket Strategy AI
 
-A purpose-built cricket strategy chatbot powered by Claude (Anthropic). Not a generic chat wrapper — Pitch IQ is designed to feel like a real analyst desk for cricket fans, coaches, and strategists.
+A purpose-built cricket strategy chatbot. Not a generic chat wrapper — Pitch IQ is designed to feel like a real analyst desk for cricket fans, coaches, and strategists.
 
 **[Live Demo →](https://pitchiq.vercel.app)** &nbsp;|&nbsp; Built for Thinkly Labs SWE Assignment
 
@@ -16,9 +16,9 @@ Cricket — especially IPL and Test cricket — has a layer of tactical depth th
 
 A **single-page chatbot** (plain HTML + CSS + JS, no framework) with:
 
-- 🎯 **Deep system prompt** — the bot is tuned specifically for cricket: T20 tactics, IPL strategy, Test match nuances, pitch conditions, player roles
-- 💬 **Full conversation memory** — the entire message history is sent per request so the bot can reference earlier context
-- ✨ **Polished experience design**:
+-  **Deep system prompt** — the bot is tuned specifically for cricket: T20 tactics, IPL strategy, Test match nuances, pitch conditions, player roles
+-  **Full conversation memory** — the entire message history is sent per request so the bot can reference earlier context
+-  **Polished experience design**:
   - Welcome state with 6 curated starter questions to eliminate blank-canvas paralysis
   - Animated typing indicator (3-dot bounce)
   - Error states with clear messaging (rate limit, bad API key, network error)
@@ -29,24 +29,15 @@ A **single-page chatbot** (plain HTML + CSS + JS, no framework) with:
 
 ---
 
-## Tech Stack
 
-| Layer | Choice |
-|-------|--------|
-| Frontend | HTML + CSS + Vanilla JS |
-| AI | Claude API (`claude-sonnet-4-20250514`) via direct browser fetch |
-| Fonts | Bebas Neue (display) · DM Sans (body) · JetBrains Mono (mono) |
-| Deployment | Vercel (static) |
 
-No build step. No framework. No bundler. Push and deploy.
 
----
 
 ## Running Locally
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/pitchiq.git
+   git clone https://github.com/harshks534/pitchiq.git
    cd pitchiq
    ```
 
@@ -57,7 +48,7 @@ No build step. No framework. No bundler. Push and deploy.
    python3 -m http.server 3000
    ```
 
-3. Open `http://localhost:3000`, enter your [Anthropic API key](https://console.anthropic.com) when prompted — it's saved in `localStorage`.
+3. Open `http://localhost:3000`
 
 ---
 
@@ -79,7 +70,7 @@ That's it — static site, zero config needed.
 
 **Why no framework?** The assignment is about product thinking and frontend judgment. A plain HTML/CSS/JS implementation is faster to ship, easier to reason about, and proves you understand the fundamentals. Frameworks are a tool — not a requirement.
 
-**Why a system prompt over a knowledge base?** For a time-boxed assignment, a deeply crafted system prompt gives the AI genuine domain personality without needing a RAG pipeline or vector DB. The "knowledge base" is Claude's cricket understanding, shaped by careful prompting.
+**Why a system prompt over a knowledge base?** For a time-boxed assignment, a deeply crafted system prompt gives the AI genuine domain personality without needing a RAG pipeline or vector DB. The "knowledge base" is groq cricket understanding, shaped by careful prompting.
 
 **UI choices that show thought:**
 - Suggestion chips solve the cold-start problem — users don't know what to ask a new product
@@ -103,5 +94,5 @@ pitchiq/
 
 ## Author
 
-Built by [Your Name] · [your@email.com](mailto:your@email.com)  
+Built by [Harsh Sinha] · [harshks534@gmail.com](mailto:your@email.com)  
 Submission for Thinkly Labs — Software Engineering Role
