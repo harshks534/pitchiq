@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pitch IQ — Cricket Strategy AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg-layer">
+    <div class="stadium-arc"></div>
+    <div class="field-circle"></div>
+    <div class="grain-overlay"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🏏</span>
+      <div class="logo-text">
+        <span class="logo-title">PITCH IQ</span>
+        <span class="logo-sub">Cricket Strategy AI</span>
+      </div>
+    </div>
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span>Analyst Online</span>
+    </div>
+  </header>
+
+  <!-- Main chat area -->
+  <main class="main">
+    <div class="chat-container" id="chatContainer">
+
+      <!-- Empty / welcome state -->
+      <div class="welcome-state" id="welcomeState">
+        <div class="welcome-badge">MATCH READY</div>
+        <h1 class="welcome-heading">Your Cricket <br /><em>Strategy Desk</em></h1>
+        <p class="welcome-sub">Ask me anything — IPL tactics, Test match nuances, player roles, pitch conditions, captaincy decisions, T20 PowerPlay strategy, and more.</p>
+
+        <div class="suggestions-grid">
+          <button class="suggestion-chip" data-prompt="What's the ideal batting order strategy for an IPL T20 chase of 180+?">
+            <span class="chip-icon">🎯</span>
+            Ideal batting order for a 180+ T20 chase
+          </button>
+          <button class="suggestion-chip" data-prompt="How should a captain set a field for a spinner on a turning track in Test cricket?">
+            <span class="chip-icon">🌀</span>
+            Field setting for a spinner on a turner
+          </button>
+          <button class="suggestion-chip" data-prompt="What makes the death overs so hard to bowl in T20 cricket and how do the best bowlers tackle it?">
+            <span class="chip-icon">💥</span>
+            Death bowling — what separates the best?
+          </button>
+          <button class="suggestion-chip" data-prompt="Explain the Bazball philosophy and how England transformed Test cricket under Ben Stokes and Brendon McCullum.">
+            <span class="chip-icon">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+            England's Bazball — explained
+          </button>
+          <button class="suggestion-chip" data-prompt="What is the role of a floater in T20 cricket and when should captains use one?">
+            <span class="chip-icon">📊</span>
+            What is a batting floater in T20?
+          </button>
+          <button class="suggestion-chip" data-prompt="How do pitches in India differ from Australia, and how should teams adjust their selection?">
+            <span class="chip-icon">🌍</span>
+            India vs Australia pitches — key differences
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="messages-list" id="messagesList"></div>
+
+    </div>
+  </main>
+
+  <!-- Input bar -->
+  <footer class="input-bar">
+    <div class="input-wrap">
+      <textarea
+        id="userInput"
+        class="input-field"
+        placeholder="Ask about strategy, players, tactics..."
+        rows="1"
+        maxlength="500"
+      ></textarea>
+      <button class="send-btn" id="sendBtn" aria-label="Send">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+    <p class="input-disclaimer">Powered by Claude · Pitch IQ is an AI analyst — verify for official match data</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
