@@ -2,7 +2,7 @@
 
 A purpose-built cricket strategy chatbot. Not a generic chat wrapper — Pitch IQ is designed to feel like a real analyst desk for cricket fans, coaches, and strategists.
 
-**[Live Demo →](https://pitchiq.vercel.app)** &nbsp;|&nbsp; Built for Thinkly Labs SWE Assignment
+**[Live Demo →](https://pitchiq-sufl.vercel.app/)** &nbsp;|&nbsp; Built for Thinkly Labs SWE Assignment
 
 ---
 
