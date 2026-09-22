@@ -53,7 +53,7 @@ Do not make up scores or statistics. Speak to tactics, strategy, and principles 
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: 'llama-3.3-70b-specdec',
         max_tokens: 1024,
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
